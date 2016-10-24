@@ -2,16 +2,18 @@
 #include<stdlib.h>
 
 int main ()
-{   int tem, temtotal, numtem=0;
+{   int tem, temtotal=0, numtem=0;
     float prom;
 
     printf("\n\tPROGRAMA PARA PROMEDIO DE TEMPERATURAS DE CPU\n\n");
     printf("Ingrese la primera temperatura: ");
     scanf("%i",&tem);
+
 while(tem!=0)
   {
-   tem+=temtotal;
+   temtotal+=tem;
     numtem++;
+
     printf("\nIngrese temperatura o ingrese CERO para finalizar: ");
     scanf("%i",&tem);
   }
